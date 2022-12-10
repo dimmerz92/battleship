@@ -1,11 +1,9 @@
 import Gameboard from "../modules/Gameboard";
-import Ship from "../modules/Ship";
 
 const game = Gameboard();
 
 describe('makes an attack and responds with a hit or miss', () => {
-    const ship = Ship(2);
-    game.placeShip(ship, [[0,0],[0,1]]);
+    game.placeShip([[0,0],[0,1]]);
 
     test('first attack misses', () => {
         expect(game.receiveAttack([2,2])).toBe(false);

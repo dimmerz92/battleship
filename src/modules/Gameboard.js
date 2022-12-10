@@ -1,3 +1,5 @@
+import Ship from "./Ship";
+
 const Gameboard = () => {
     // Initialise a playing field
     const coordinates = {};
@@ -9,7 +11,8 @@ const Gameboard = () => {
 
     // Place a ship on the battlefield
     const ships = [];
-    const placeShip = (ship, coords) => {
+    const placeShip = (coords) => {
+        const ship = Ship(coords.length);
         ships.push(ship);
         coords.forEach(coord => {
             coordinates[coord].ship = ship;
