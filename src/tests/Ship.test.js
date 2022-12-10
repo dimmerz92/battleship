@@ -1,4 +1,4 @@
-import Ship from "./Ship";
+import Ship from "../modules/Ship";
 
 describe('hitting a ship until it is sunk', () => {
     const ship = Ship(2);
