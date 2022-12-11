@@ -1,0 +1,66 @@
+:root {
+    font-family: "Helvetica Neue", Helvetica, sans-serif;
+}
+
+body {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    min-height: 100vh;
+    margin: 0;
+}
+
+header {
+    text-align: center;
+    background-color: pink;
+}
+
+nav > ul {
+    display: flex;
+    justify-content: center;
+    gap: 10vw;
+    list-style: none;
+}
+
+main {
+    display: grid;
+    grid-template-rows: auto 1fr;
+    background-color: green;
+}
+
+#buttonDiv {
+    text-align: center;
+    padding: 0.5em 0;
+}
+
+#gameOn {
+    font-size: large;
+    padding: 12px 24px;
+}
+
+#gameboard {
+    display: grid;
+    grid-template-columns: 1fr 4fr 1fr;
+    background-color: aqua;
+}
+
+.dash {
+    background-color: purple;
+}
+
+#mainGame {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 1em;
+    padding: 1em;
+}
+
+.board {
+    border: 1px solid black;
+    aspect-ratio: 1/1;
+}
+
+footer {
+    text-align: center;
+    background-color: blue;
+}
